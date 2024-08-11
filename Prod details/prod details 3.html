@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Buy Now</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .buy-now-container {
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .image{
+            padding: 10px;
+        }
+
+        .product-details {
+            max-width: 500px;
+            margin-left: 20px;
+        }
+
+        .product-details h1 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        .product-details .price {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .quantity {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .quantity-btn {
+            border: 1px solid #ccc;
+            background-color: #f4f4f4;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #quantity {
+            width: 50px;
+            text-align: center;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .add-to-cart {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .reviews {
+            margin-top: 20px;
+        }
+
+        .star-rating {
+            color: gold;
+        }
+
+        .review-form textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .review-form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .review-item {
+            margin-bottom: 20px;
+        }
+
+        .review-item hr {
+            margin: 10px 0;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .review-item p {
+            margin: 5px 0;
+        }
+
+        .review-item .star-rating {
+            margin-bottom: 5px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            background-image: url(images/image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;    
+            height: 300px;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+        }
+        .para{
+            padding: 10 10px;
+            color: white;
+        }
+        .para img{
+            padding: 10px;
+        }   
+        .text {
+            padding-top: 80px;
+            font-family: "Lilita One", sans-serif;
+            font-weight: 800;
+            font-size: 30px;
+        }
+
+        li a:hover {
+            border: 2px solid black;
+            height: 20px;
+            transition: 0.05s ease;
+        }
+
+
+        .related-products h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .related-products .product {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .related-products .product img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .related-products .product-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .related-products .product-details h4 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .related-products .product-details .price {
+            color: #333;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="image">
+            <img src="images/images.jpg" alt="" width="50px" height="50px">
+            <p class="para">The Football Stuff</p>
+        </div>
+        <div class="text">
+            <h1><b>THE FOOTBALL GROUND</b></h1>
+        </div>
+        <ul>
+            <li><a href="football.html" target="_blank"><i class="fa-solid fa-user"></i> Home</a></li>
+            <li><a href="football-products.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Products</a></li>
+            <li><a href="contact.html" target="_blank"><i class="fa-sharp-duotone fa-solid fa-address-book"></i> Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <div class="buy-now-container">
+        <!-- Product Image Section -->
+        <div class="product-image">
+            <img src="images/images (6).jpg" alt="Special Football Boots" height="600px">
+        </div>
+
+        <!-- Product Details and Reviews Section -->
+        <div class="product-details">
+            <h1>Special And Comfortable Blue Boots</h1>
+            <p class="price">Rs: 4000</p>
+            
+            <!-- Quantity Adjustment -->
+            <div class="quantity">
+                <button class="quantity-btn" id="decrease">-</button>
+                <input type="text" id="quantity" value="1">
+                <button class="quantity-btn" id="increase">+</button>
+            </div>
+
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart" id="add-to-cart">Add to Cart</button>
+
+            <!-- Reviews Section -->
+            <div class="reviews">
+                <h2>Customer Reviews</h2>
+                
+                <!-- Review 1 -->
+                <div class="review-item">
+                    <div class="star-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>"Great boots! Comfortable and durable. Highly recommend."</p>
+                    <p><b>John Doe</b></p>
+                    <hr>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-item">
+                    <div class="star-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"The best football boots I've ever worn. Worth every penny!"</p>
+                    <p><b>Jane Smith</b></p>
+                    <hr>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-item">
+                    <div class="star-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Excellent quality and comfort. Perfect for any serious player."</p>
+                    <p><b>Emily Johnson</b></p>
+                    <hr>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-item">
+                    <div class="star-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>"Good value for the price, but they could use a bit more cushioning."</p>
+                    <p><b>Michael Brown</b></p>
+                    <hr>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="review-item">
+                    <div class="star-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Absolutely fantastic boots. I've been playing better since I got them."</p>
+                    <p><b>Alice Green</b></p>
+                    <hr>
+                </div>
+
+                <!-- Review Form -->
+                <div class="review-form">
+                    <textarea placeholder="Leave a review..."></textarea>
+                    <button>Submit Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products Section -->
+    <div class="related-products">
+        <h3>Related Products</h3>
+        <div class="product">
+            <div class="product-image">
+                <img src="images/related-product1.jpg" alt="Related Product 1">
+            </div>
+            <div class="product-details">
+                <h4>Comfortable Sports Shoes</h4>
+                <p class="price">Rs: 3500</p>
+                <button class="add-to-cart" onclick="addToCart('Comfortable Sports Shoes', 3500)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="images/related-product2.jpg" alt="Related Product 2">
+            </div>
+            <div class="product-details">
+                <h4>Durable Soccer Cleats</h4>
+                <p class="price">Rs: 4500</p>
+                <button class="add-to-cart" onclick="addToCart('Durable Soccer Cleats', 4500)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript for quantity adjustment and cart management -->
+    <script>
+        document.getElementById('increase').addEventListener('click', function() {
+            let quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        });
+
+        document.getElementById('decrease').addEventListener('click', function() {
+            let quantityInput = document.getElementById('quantity');
+            if (parseInt(quantityInput.value) > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        });
+
+        function addToCart(productName, price) {
+            const quantity = document.getElementById('quantity').value;
+            alert(`Added ${quantity} of ${productName} to cart. Total price: Rs ${price * quantity}`);
+        }
+
+        document.getElementById('add-to-cart').addEventListener('click', function() {
+            addToCart('Special And Comfortable Blue Boots', 4000);
+        });
+    </script>
+</body>
+</html>

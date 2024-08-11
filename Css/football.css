@@ -1,0 +1,105 @@
+.image{
+    display: flex;
+    padding: 10px;  
+}
+.nav{
+display: flex;
+justify-content: space-between;
+background-image: url(../images/image.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;    
+height: 300px;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+.text{
+    padding-top: 80px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+@media(max-width:400px){
+    /* @media only screen and (min-width: 600px)  */
+        .nav {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+        }
+    
+        .image {
+            display: flex;
+            align-items: center;
+        }
+    
+        .para {
+            margin-left: 10px;
+        }
+    
+        .text h1 {
+            font-size: 2rem;
+        }
+    
+        ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+    
+        .pic img {
+            width: 
+        }
+    }
+.pic{
+padding: 20px;
+margin: 0px;
+background-color: ;
+}
+.para{
+    color: white;
+padding: 0 10px;
+}
+li a:hover{
+border: 2px solid black;
+height: 20px;
+transition: 0.05s ease;
+}
+.paragraph{
+    padding: 0 10px;
+    color: black;
+}
+.div{
+    display: flex;
+}
+.pa{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0px; 
+}
+.pa ul{
+list-style: none;
+font-size: 30px;
+}
+.btn input{
+width: 400px;
+border-radius: 3px;
+}
+.footer{
+padding: 5px;
+margin: 5px;
+}
+.d{
+    margin-right: 50px;
+}

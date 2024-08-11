@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.image{
+    display: flex;
+    padding: 10px;  
+}
+.para{
+    color: white;
+padding: 0 10px;
+}
+iframe{
+    display: flex;
+}
+.nav{
+display: flex;
+justify-content: space-between;
+background-image: url(../images/image.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;    
+height: 300px;
+}
+.toggle-container {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background-color: #444;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-container.dark-mode {
+    background-color: #222;
+}
+.toggle-button {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: left 0.3s;
+}    
+li a:hover{
+    border: 2px solid black;
+    height: 20px;
+    transition: 0.05s ease;
+    }
+.toggle-container.dark-mode .toggle-button {
+    left: 26px;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+.text{
+    padding-top: 115px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+    margin-top: 0;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #218838;
+}
+.message {
+    margin-top: 10px;
+    color: #28a745;
+}

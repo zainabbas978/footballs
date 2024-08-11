@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Product Details - Special Football Goals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-details {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .product-details h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .product-details .price {
+            font-size: 20px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .quantity {
+            margin: 20px 0;
+        }
+
+        .quantity-btn {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .star-rating {
+                color: gold;
+            }
+            .image{
+            padding: 10px;
+        }
+
+        #quantity {
+            width: 50px;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        .description, .reviews {
+            margin-top: 20px;
+        }
+
+        .description h2, .reviews h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .review {
+            margin-top: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .review:last-of-type {
+            border-bottom: none;
+        }
+
+        .buy-now {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .buy-now a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .image{
+    display: flex;
+    padding: 10px;  
+}
+.nav{
+display: flex;
+justify-content: space-between;
+background-image: url(images/image.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;    
+height: 300px;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+.text{
+    padding-top: 80px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.pic{
+padding: 20px;
+margin: 0px;
+background-color: ;
+}
+.para{
+    color: white;
+padding: 0 10px;
+}
+li a:hover{
+border: 2px solid black;
+height: 20px;
+transition: 0.05s ease;
+}
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="image">
+        <img src="images/images.jpg" alt="" width="50px" height="50px"><p class="para">The Football Stuff</p>
+    </div>
+    <div class="text">
+    <h1> <b>THE FOOTBALL GROUND</b></h1>
+</div>
+    <ul>
+        <li><a href="football.html" target="_blank" > <i class="fa-solid fa-user"></i> Home</a></li>
+        <li><a href="football products.html" target="_blank" ><i class="fa-solid fa-cart-shopping"></i> Products</a></li>
+        <li><a href="contact.html" target="_blank" > <i class="fa-sharp-duotone fa-solid fa-address-book"></i> Contact US</a></li>
+    </ul> 
+    </div>
+    <div class="container">
+        <!-- Product Image Section -->
+        <div class="product-image">
+            <img src="images/download (1).jpg" alt="Special Football Goals" width="500px" height="500px">
+        </div>
+
+        <!-- Product Details and Reviews Section -->
+        <div class="product-details">
+            <h1>Football Goals for Domestic</h1>
+            <p class="price">Rs: 4500</p>
+
+            <!-- Quantity Adjustment -->
+            <div class="quantity">
+                <button class="quantity-btn" id="decrease">-</button>
+                <input type="text" id="quantity" value="1" readonly>
+                <button class="quantity-btn" id="increase">+</button>
+            </div>
+
+            <!-- Product Description -->
+            <div class="description">
+                <h2>Product Details</h2>
+                <p>
+                    These Special Football Goals are perfect for all types of football practice and games. Made from high-quality materials, they offer durability and stability.
+                </p>
+            </div>
+
+<!-- Reviews Section -->
+<div class="reviews">
+    <h2>Customer Reviews</h2>
+    
+    <!-- Review 1 -->
+    <div class="review-item">
+        <div class="star-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p>"Great boots! Comfortable and durable. Highly recommend."</p>
+        <p><b>John Doe</b></p>
+        <hr>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review-item">
+        <div class="star-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p>"The best football boots I've ever worn. Worth every penny!"</p>
+        <p><b>Jane Smith</b></p>
+        <hr>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="review-item">
+        <div class="star-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p>"Excellent quality and comfort. Perfect for any serious player."</p>
+        <p><b>Emily Johnson</b></p>
+        <hr>
+    </div>
+
+    <!-- Review 4 -->
+    <div class="review-item">
+        <div class="star-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p>"Good value for the price, but they could use a bit more cushioning."</p>
+        <p><b>Michael Brown</b></p>
+        <hr>
+    </div>
+
+    <!-- Review 5 -->
+    <div class="review-item">
+        <div class="star-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p>"Absolutely fantastic boots. I've been playing better since I got them."</p>
+        <p><b>Alice Green</b></p>
+        <hr>
+    </div>
+            <!-- Buy Now Button -->
+            <button class="buy-now">
+                <a href="checkout.html" style="text-decoration: none; color: white;">Add to Cart</a>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for quantity adjustment
+        document.getElementById('increase').addEventListener('click', function() {
+            var quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        });
+
+        document.getElementById('decrease').addEventListener('click', function() {
+            var quantityInput = document.getElementById('quantity');
+            if (parseInt(quantityInput.value) > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        });
+    </script>
+</body>
+</html>
